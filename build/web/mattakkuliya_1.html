@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Enter Your House Information</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container p-t-3">
+
+    <h1>House Images Upload System</h1>
+    <h6>Area: Mattakkuliya, Colombo 15</h6>
+    
+    <br>
+    <br>
+    
+    <div class="m-b-2">
+    <h7><b>Upload your images here</b></h7><br>
+    <h7>1. Before uploading, rename your frontal image name to 1.jpg;</h7><br>
+    <h7>2. Before uploading, rename your bedroom image name to 2.jpg;</h7><br>
+    <h7>3. Before uploading, rename your bathroom image name to 3.jpg;</h7><br>
+    <h7>4. Before uploading, rename your kitchen image name to 4.jpg;</h7><br>
+</div>
+    <br>
+    <br>
+
+    <div class="m-b-2"></div>
+
+        <form id="form1" action="UploadServlet" method="POST" enctype="multipart/form-data">
+
+            <div class="form-group">
+                <label for="frontal">Frontal Feature</label>
+                <h6>Upload your frontal house image here</h6>
+                <input type="file" name="frontal" accept="image/*" id="frontal" class="form-control" placeholder="Frontal Photo" required>
+                <small><ul>
+                    <li>Image should be 3840×2160px</li>
+                    <li>image larger then 8MB will not be accepted</li>
+                </ul></small>
+            </div>
+            
+            <div class="form-group">
+                <label for="bedroom">Bedroom Feature</label>
+                <h6>Upload your bedroom image here</h6>
+                <input type="file" name="bedroom" accept="image/jpeg, image/png" id="bedroom" class="form-control" placeholder="Bedroom Photo" required maxfilesize=8 mindimensions=500x500>
+                <small><ul>
+                    <li>Image should be 3840×2160px</li>
+                    <li>image larger then 8MB will not be accepted</li>
+                </ul></small>
+            </div>
+            
+            <div class="form-group">
+                <label for="bathroom">Bathroom Feature</label>
+                <h6>Upload your bathroom image here</h6>
+                <input type="file" name="bathroom" accept="image/jpeg, image/png" id="bathroom" class="form-control" placeholder="Bathroom Photo" required maxfilesize="8" mindimensions="500x500">
+                <small><ul>
+                    <li>Image should be 3840×2160px</li>
+                    <li>image larger then 8MB will not be accepted</li>
+                </ul></small>
+            </div>
+            
+            <div class="form-group">
+                <label for="kitchen">Kitchen Feature</label>
+                <h6>Upload your kitchen image here</h6>
+                <input type="file" name="kitchen" accept="image/jpeg, image/png" id="kitchen" class="form-control" placeholder="Kitchen Photo" required maxfilesize="8" mindimensions="500x500">
+                <small><ul>
+                    <li>Image should be 3840×2160px</li>
+                    <li>image larger then 8MB will not be accepted</li>
+                </ul></small>
+            </div>
+
+            <input type="submit" name="form1_submit" id="form1_submit" class="btn btn-primary" value="Submit">
+
+        </form>
+
+    </div>
+
+
+</div>
+
+<script src="dist/index.js"></script>
+</body>
+</html>

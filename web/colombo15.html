@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Select Your Area</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container p-t-3">
+
+    <h1>House Information Form</h1>
+    <h3>Select Your Area</h3>
+
+    <div class="card p-a-3">
+        
+        <form name="form1" id="form1" method="POST" ACTION="western.html" showvalid>
+
+                    <div class="form-group">
+                <label for="city">Area</label>
+                <select name="city" id="city" class="c-select form-control" required onchange="javascript:location.href = this.value;">
+                        <option value="" selected>Click here & select your area</option>
+                        <option value="">Modera</option>
+                        <option value="mattakkuliya.html">Mattakkuliya</option>
+                        <option value="">Madampitiya</option>
+                </select>
+            </div>
+        </form>
+        </div>
+     </div>
+        
+                     
+<script src="dist/index.js"></script>
+</body>
+</html>

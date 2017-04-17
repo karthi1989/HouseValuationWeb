@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Select Your Province</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container p-t-3">
+
+    <h1>House Information Form</h1>
+    <h3>Select Your Province</h3>
+
+    <div class="card p-a-3">
+        
+        <form name="form1" id="form1" method="POST" showvalid>
+
+                    <div class="form-group">
+                <label for="province">Province</label>
+                <select name="province" id="province" class="c-select form-control" required onchange="javascript:location.href = this.value;">
+                        <option value="" selected>Click here & select your province</option>
+                        <option value="">Northern</option>
+                        <option value="">North Western</option>
+                        <option value="western.html">Western</option>
+                        <option value="">North Central</option>
+                        <option value="">Central</option>
+                        <option value="">Sabaragamuwa</option>
+                        <option value="">Eastern</option>
+                        <option value="">Uva</option>
+                        <option value="">Southern</option>
+                </select>
+            </div>
+        </form>
+        </div>
+     </div>
+        
+                     
+<script src="dist/index.js"></script>
+</body>
+</html>
