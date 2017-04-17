@@ -240,9 +240,9 @@ public class Evaluation extends HttpServlet {
             @Override
             public float success(Result result) {
                 
-                //int[] valueToPredict = new int[] {15,6,138,1,1,5,4,2012,1,0,0,0,0,1,0,1,1,0,1,0,1,0,1,0,32,34,35,36}; 
+                int[] valueToPredict = new int[] {15,4,80,1,2,4,2,9,1,0,1,1,1,1,1,1,1,0,0,0,1,0,1,1,34,32,30,31}; 
                 //int[] valueToPredict = new int[] {getArea(),getLsize(),getLvalue(),getHsize(),getStories(),getBed(),getBath(),getYear(),getReno(),getHighway(),getMainrd(),getHos(),getCol(),getSupermarket(),getScl(),getBus(),getWne(),getGar(),getCashcr(),getSec(),getGarage(),getAc(),getTiled(),getCitypoint(),getFrontal(),getBedroom(),getBathroom(),getKitchen()}; 
-                int[] valueToPredict = new int[]{area2,lsize2,lvalue2,hsize2,stories2,bed2,bath2,year2,reno2,highway2,mainrd2,hos2,col2,supermarket2,scl2,bus2,wne2,gar2,cashcr2,sec2,garage2,ac2,tiled2,citypoint2,frontal2,bedroom2,bathroom2,kitchen2}; 
+                //int[] valueToPredict = new int[]{area2,lsize2,lvalue2,hsize2,stories2,bed2,bath2,year2,reno2,highway2,mainrd2,hos2,col2,supermarket2,scl2,bus2,wne2,gar2,cashcr2,sec2,garage2,ac2,tiled2,citypoint2,frontal2,bedroom2,bathroom2,kitchen2}; 
                
                 //out.println("Predicted result: " + result.predictValue(valueToPredict));
                 //out.print("<br/>");
